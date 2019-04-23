@@ -17,7 +17,7 @@ const createRequest = (action) => {
             resolve, reject, action
         }
     });
-}
+};
 const styles = StyleSheet.create({
     container: {
         width: 0,
@@ -86,10 +86,12 @@ export default class BlueSnapEncrypter extends PureComponent {
         return (
             <View style={styles.container}>
                 <WebView
+                    style={{ opacity: 0.00 }}
                     ref={this.setWebViewRef}
                     onMessage={this.onMessage}
                     injectedJavaScript={this.getInjectedJavaScript()}
                     source={BRIDGE}
+                    originWhitelist={["file://"]}
                 />
             </View>
         );
@@ -99,9 +101,9 @@ export default class BlueSnapEncrypter extends PureComponent {
 BlueSnapEncrypter.propTypes = {
     clientEncryptionKey: PropTypes.string.isRequired,
     bluesnapVersion: PropTypes.string
-}
+};
 
 BlueSnapEncrypter.defaultProps = {
     bluesnapVersion: "1.0.3",
     fraudSessionId: ""
-}
+};

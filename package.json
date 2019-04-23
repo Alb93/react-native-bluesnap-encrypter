@@ -1,6 +1,6 @@
 {
   "name": "react-native-bluesnap-encrypter",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "A Cross platform React Native module to encrypt BlueSnap sensitive form data",
   "main": "src/index.js",
   "scripts": {
@@ -16,13 +16,13 @@
     "encryption"
   ],
   "author": {
-    "name": "Udi Talias",
-    "email": "udi.talias@gmail.com",
+    "name": "Udi Talias - Alberto Di Gioacchino",
+    "email": "udi.talias@gmail.com - alberto.digioacchino.93@gmail.com",
     "url": "https://github.com/uditalias"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/uditalias/react-native-bluesnap-encrypter/issues"
+    "url": "https://github.com/Alb93/react-native-bluesnap-encrypter/issues"
   },
-  "homepage": "https://github.com/uditalias/react-native-bluesnap-encrypter#readme"
+  "homepage": "https://github.com/Alb93/react-native-bluesnap-encrypter#readme"
 }
