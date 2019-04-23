@@ -1,6 +1,7 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
-import { View, WebView, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
+import { WebView } from 'react-native-webview';
 
 const BRIDGE = require("./bridge.html");
 const validTypes = ["encrypt"];
@@ -90,8 +91,8 @@ export default class BlueSnapEncrypter extends PureComponent {
                     ref={this.setWebViewRef}
                     onMessage={this.onMessage}
                     injectedJavaScript={this.getInjectedJavaScript()}
-                    source={BRIDGE}
-                    originWhitelist={["file://"]}
+                    source={{uri: BRIDGE}}
+                    originWhitelist={['*']}
                 />
             </View>
         );
