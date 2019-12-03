@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "react-native-webview": "^5.7.1"
+    "react-native-webview": "^7.5.2"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
   "author": {
     "name": "Udi Talias - Alberto Di Gioacchino",
     "email": "udi.talias@gmail.com - alberto.digioacchino.93@gmail.com",
-    "url": "https://github.com/uditalias"
+    "url": "https://github.com/Alb93"
   },
   "license": "MIT",
   "bugs": {
